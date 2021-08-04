@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live broadcast</title>
+    <link rel="stylesheet" href="src/css/normalize.css" />
+    <link rel="stylesheet" href="../../index.css" />
+    <link rel="stylesheet" href="animal_page.css" />
+    <script type="text/javascript" src="src/js/scripts.js"></script>
+  </head>
+
+  <body class="light_theme">
+    <h1 class="site_title">Online-zoo</h1>
+    <a name="about"></a>
+    <header class="header">
+      <div class="wrapper">
+        <div class="content">
+          <div class="header_content">
+            <a href="../../index.html">
+              <div class="logo"></div>
+            </a>
+            <ul class="navbar">
+              <li><a href="../../index.html">About</a></li>
+              <li class="header_active"><a href="#">Zoos</a></li>
+              <li><a href="../../pages/intermediate_page/map.html">Map</a></li>
+              <li><a href="#contact_us">Contact Us</a></li>
+              <li>
+                <a
+                  href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp"
+                  >Design</a
+                >
+              </li>
+            </ul>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="theme_slider" onclick="swithTheme()"></span>
+            </label>
+            <button class="btn_navigation"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="broadcast_section">
+      <div class="wrapper">
+        <div class="side_menu">
+          <div class="btn_up">
+            <button type="button" class="btn_previous" onclick="sliderMove('up')"></button>
+          </div>
+          <a href="panda.html">
+            <div class="side_menu_item side_slider_item_chosen">
+              <img
+                src="../../assets/images/panda_round.png"
+                title="Panda"
+              />
+            </div>
+          </a>
+          <a href="eagle.html">
+            <div class="side_menu_item">
+              <img
+                src="../../assets/images/eagle_round.png"
+                title="Eagle"
+              />
+            </div>
+          </a>
+          <a href="crocodile.html">
+            <div class="side_menu_item">
+              <img
+                src="../../assets/images/crocodile_round_side.png"
+                title="Crocodile"
+              />
+            </div>
+          </a>
+          <a href="gorilla.html">
+            <div class="side_menu_item">
+              <img
+                src="../../assets/images/gorilla_round.png"
+                title="Gorilla"
+              />
+            </div>
+          </a>
+          <div class="btn_down">
+            <button type="button" class="btn_previous" onclick="sliderMove('down')"></button>
+          </div>
+        </div>
+        <div class="broadcast_wrapper">
+          <p class="broadcast_title">The Beijing Zoo</p>
+          <div class="broadcast_video">
+            <div class="screen">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/OObOQ2GElhA"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""
+                width="100%"
+                height="100%"
+                frameborder="0"
+                id="mainScreen"
+              >
+              </iframe>
+            </div>
+            <div class="description">
+              <div class="description_item">
+                <p class="description_item_title">Population:</p>
+                <span class="text">About 1,590 individuals</span>
+              </div>
+              <div class="description_item">
+                <p class="description_item_title">Habitat</p>
+                <p class="text">
+                  Temperate forests high in the mountains of southwest China
+                </p>
+              </div>
+              <div class="description_item mb-34">
+                <p class="description_item_title">Diet:</p>
+                <p class="text">
+                  A panda's daily diet consists almost entirely of the leaves,
+                  stems and shoots of various bamboo species. Bamboo contains
+                  very little nutritional value so pandas must eat 12-38kg every
+                  day to meet their energy needs.
+                </p>
+              </div>
+              <div class="btn_feed">
+                <span>FEED</span>
+              </div>
+            </div>
+          </div>
+          <div class="screen_preview">
+            <div class="screen_preview_item">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/CpK1lZJmbJY"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""
+                width="100%"
+                height="100%"
+                frameborder="0"
+                id="firstPreview"
+              >
+              </iframe>
+              <span class="iframe_plug" onclick="changeMainScreen(1)"></span>
+            </div>
+            <div class="screen_preview_item">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/0iI86rNtDo8"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""
+                width="100%"
+                height="100%"
+                frameborder="0"
+                id="secondPreview"
+              >
+              </iframe>
+              <span class="iframe_plug" onclick="changeMainScreen(2)"></span>
+            </div>
+            <div class="screen_preview_item third_item">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/kPiZyt4zdGc"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""
+                width="100%"
+                height="100%"
+                frameborder="0"
+                id="thirdPreview"
+              >
+              </iframe>
+              <span class="iframe_plug" onclick="changeMainScreen(3)"></span>
+            </div>
+          </div>
+          <div class="broadcast_pagination">
+            <span class="broadcast_pagination_item"></span>
+            <span class="broadcast_pagination_item"></span>
+            <span class="broadcast_pagination_item"></span>
+          </div>
+          <div class="bottom_description">
+            <div class="description_item">
+              <p class="description_item_title">Population:</p>
+              <span class="text">About 1,590 individuals</span>
+            </div>
+            <div class="description_item">
+              <p class="description_item_title">Habitat</p>
+              <p class="text">
+                Temperate forests high in the mountains of southwest China
+              </p>
+            </div>
+            <div class="description_item mb-34">
+              <p class="description_item_title">Diet:</p>
+              <p class="text">
+                A panda's daily diet consists almost entirely of the leaves,
+                stems and shoots of various bamboo species. Bamboo contains very
+                little nutritional value so pandas must eat 12-38kg every day to
+                meet their energy needs.
+              </p>
+            </div>
+            <div class="btn_feed">
+              <span>FEED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a name="contact_us"></a>
+    <footer>
+      <div class="wrapper">
+        <div class="content">
+          <div class="footer_navpanel">
+            <a href="#about">
+              <div class="logo_white"></div>
+            </a>
+            <ul class="footer_navbar">
+              <li><a href="#">About</a></li>
+              <li><a href="pages/live_broadcast/panda.html">Zoos</a></li>
+              <li><a href="pages/intermediate_page/map.html">Map</a></li>
+              <li>
+                <a
+                  href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp"
+                  >Design</a
+                >
+              </li>
+            </ul>
+            <button class="btn_donate_for_volunteers">
+              <span>DONATE FOR VOLUNTEERS</span>
+            </button>
+          </div>
+          <div class="contact_us">
+            <ul class="footer_navbar_vertical">
+              <li><a href="#">About</a></li>
+              <li><a href="pages/live_broadcast/panda.html">Zoos</a></li>
+              <li><a href="pages/intermediate_page/map.html">Map</a></li>
+              <li>
+                <a
+                  href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp"
+                  >Design</a
+                >
+              </li>
+            </ul>
+            <span class="contact_us_title">Contact us</span>
+            <form class="contact_us_form" method="POST">
+              <input
+                class="contact_form_item"
+                type="text"
+                name="contactName"
+                placeholder="Name"
+                required=""
+              />
+              <input
+                class="contact_form_item"
+                type="email"
+                name="contactEmail"
+                placeholder="Email"
+                required=""
+              />
+              <fieldset>
+                <legend>Please enter your message</legend>
+                <textarea class="contact_text_area"></textarea>
+              </fieldset>
+              <div class="contact_checkbox_container">
+                <input type="checkbox" id="contactCheckbox" required="" />
+                <label for="contact_checkbox" class="checkbox_title"
+                  >I agree to the processing of Personal Data</label
+                >
+              </div>
+              <button type="submit" class="btn_contact_submit">
+                send
+                <img
+                  src="../../assets/icons/arrow_right_submit.svg"
+                  alt="send"
+                />
+              </button>
+            </form>
+          </div>
+          <div class="zoo_online_center">
+            <span class="online_center_title">Zoo online center</span>
+            <p class="text color_white mb-5">132, Address District, Street</p>
+            <p class="text color_white mb-20">Open Daily 10:00 am - 5:00 pm</p>
+            <address>
+              <a href="tel:7021633433" class="text color_white"
+                >T(702) 163-3433</a
+              >
+            </address>
+            <address>
+              <a
+                href="mailto:zoo.online@gmail.com"
+                class="text color_white mb-20"
+                >zoo.online@gmail.com</a
+              >
+            </address>
+            <ul class="footer_networks">
+              <li class="instagram">
+                <a href="https://www.instagram.com"></a>
+              </li>
+              <li class="twitter">
+                <a href="https://twitter.com"></a>
+              </li>
+              <li class="vk">
+                <a href="https://vk.com"></a>
+              </li>
+              <li class="youtube">
+                <a href="https://youtube.com"></a>
+              </li>
+            </ul>
+            <button class="btn_donate_for_volunteers">
+              <span>DONATE FOR VOLUNTEERS</span>
+            </button>
+          </div>
+          <div class="footer_copyrights">
+            <span class="copyrights_text mt-28">©Noora Sagnayeva</span>
+            <span class="copyrights_text mt-5"
+              >©RSSchool and ©Yem Digital - 2021</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="broadcast.js"></script>
+  </body>
+</html>
